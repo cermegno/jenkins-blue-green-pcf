@@ -10,5 +10,5 @@ for eachsurvey in r.keys('survey*'):
     response += "Division : " + r.hget(eachsurvey,'division') + "<br>\n"
     response += "State    : " + r.hget(eachsurvey,'state') + "<br>\n"
     response += "Feedback : " + r.hget(eachsurvey,'feedback') + "<br>\n"
-    response += " ----------------------<br>"
+    response += " ----------------------<br>\n"
 print response
