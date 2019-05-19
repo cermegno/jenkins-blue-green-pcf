@@ -22,7 +22,7 @@ class MyTestCase(unittest.TestCase):
         #assert b'DevOps demystified' in response.data
         #assert b'Login' not in response.data	
         self.assertEqual(response.status_code, 200)
-        self.assertIn(b'TevOps demystified', response.data)
+        self.assertIn(b'DevOps demystified', response.data)
         self.assertNotIn(b'Login', response.data)
 
     def test_survey(self):
