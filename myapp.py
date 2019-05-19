@@ -3,6 +3,7 @@ import os
 import redis
 from flask import Flask, render_template, redirect, request, url_for, make_response
 import uuid
+import json
 
 if 'VCAP_SERVICES' in os.environ: # I must be in Prod in PWS
     VCAP_SERVICES = json.loads(os.environ['VCAP_SERVICES'])
