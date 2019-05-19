@@ -6,3 +6,5 @@ applications:
   instances: 1
   routes:
   - route: myapp242.cfapps.io
+  services:
+  - redis1
