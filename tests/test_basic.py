@@ -19,10 +19,10 @@ class MyTestCase(unittest.TestCase):
 
     def test_agenda(self):
         response = self.app.get('/agenda', follow_redirects=True)
-        assert b'DevOps demystified' in response.data
-        assert b'Login' not in response.data	
+        #assert b'DevOps demystified' in response.data
+        #assert b'Login' not in response.data	
         self.assertEqual(response.status_code, 200)
-        self.assertIn(b'DevOps demystified', response.data)
+        self.assertIn(b'TevOps demystified', response.data)
         self.assertNotIn(b'Login', response.data)
 
     def test_survey(self):
