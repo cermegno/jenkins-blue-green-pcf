@@ -19,7 +19,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_agenda(self):
         response = self.app.get('/agenda', follow_redirects=True)
-        assert b'DevOps demystifie' in response.data
+        assert b'DevOps demystified' in response.data
         assert b'Login' not in response.data	
         self.assertEqual(response.status_code, 200)
         self.assertIn(b'DevOps demystified', response.data)
@@ -28,7 +28,7 @@ class MyTestCase(unittest.TestCase):
     def test_survey(self):
         response = self.app.get('/survey', follow_redirects=True)
         self.assertEqual(response.status_code, 200)
-        self.assertIn(b'EVENT SURVE', response.data)
+        self.assertIn(b'EVENT SURVEY', response.data)
         self.assertIn(b'Division', response.data)
         self.assertIn(b'State', response.data)
         self.assertIn(b'SUBMIT', response.data)
