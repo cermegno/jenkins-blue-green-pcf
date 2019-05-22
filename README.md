@@ -1,2 +1,2 @@
-# python-testing
-Files I need to learn Python testing 
+# Jenkins Blue-Green deployment to Cloud Foundry
+Repo to stored the files required
